@@ -1,12 +1,15 @@
 import {Container} from '@mui/material';
-import HomePage from './HomePage';
+import Welcome from './components/Welcome';
+import Record from './components/Record';
+import PageContainer from './components/PageContainer';
 
 function App() {
   return (
     <>
-      <Container sx={{ backgroundColor: "azure", height: "100vh", width: "95vh" }}>
-        <HomePage />
-      </Container>
+      <PageContainer>
+        <Welcome />
+        <Record />
+      </PageContainer>
     </>
   );
 }
