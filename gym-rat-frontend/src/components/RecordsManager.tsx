@@ -18,11 +18,8 @@ const RecordsManager = () => {
             alignItems: 'center',
             gap: 3
         }}>
-            {records.map((record, index) => (
-                // Render each record with a unique key
-                <React.Fragment key={index}>{record}</React.Fragment>
-            ))}
-            <Plus onAdd={addRecord} />
+        {records}
+        <Plus onAdd={addRecord} />
         </Box>
     );
 };
