@@ -1,4 +1,6 @@
 import { Box, TextField, InputAdornment } from '@mui/material';
+import Plus from './Plus';
+import RecordsManager from './RecordsManager';
 
 const Record = () => {
     return (
@@ -6,8 +8,8 @@ const Record = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginTop: 5,
-            gap: 2
+            marginTop: 7.5,
+            gap: 3
         }}>
             <TextField required id="outlined-basic" label="Exercise" variant="outlined" />
             <TextField required id="outlined-basic" 
@@ -16,6 +18,7 @@ const Record = () => {
             InputProps={{startAdornment: <InputAdornment position="start">kg</InputAdornment>}}
             />
             <TextField required id="outlined-basic" label="Reps" variant="outlined" />
+            <RecordsManager/>
         </Box>
     );
 };
