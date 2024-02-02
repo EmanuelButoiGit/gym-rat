@@ -4,7 +4,6 @@ import Record from './Record';
 import Plus from './Plus';
 
 const RecordsManager = () => {
-    // Use 'any[]' to avoid type issues temporarily
     const [records, setRecords] = useState<any[]>([]);
 
     const addRecord = () => {
