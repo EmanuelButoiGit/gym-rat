@@ -1,12 +1,13 @@
-import Button from '@mui/material/Button';
+import {Container} from '@mui/material';
+import HomePage from './HomePage';
 
 function App() {
   return (
-    <div>
-      <Button variant="contained" color="primary">
-      🏋🏻+🐁
-      </Button>
-    </div>
+    <>
+      <Container sx={{ backgroundColor: "azure", height: "100vh", width: "95vh" }}>
+        <HomePage />
+      </Container>
+    </>
   );
 }
 
