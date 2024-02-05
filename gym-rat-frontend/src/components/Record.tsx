@@ -1,6 +1,4 @@
 import { Box, TextField, InputAdornment } from '@mui/material';
-import Plus from './Plus';
-import RecordsManager from './RecordsManager';
 
 const Record = () => {
     return (
@@ -18,7 +16,6 @@ const Record = () => {
             InputProps={{startAdornment: <InputAdornment position="start">kg</InputAdornment>}}
             />
             <TextField required id="outlined-basic" label="Reps" variant="outlined" />
-            <RecordsManager/>
         </Box>
     );
 };

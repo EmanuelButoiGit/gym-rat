@@ -1,13 +1,13 @@
 import Welcome from './components/Welcome';
-import Record from './components/Record';
 import PageContainer from './components/PageContainer';
+import RecordsManager from './components/RecordsManager';
 
 function App() {
   return (
     <>
       <PageContainer>
         <Welcome />
-        <Record />
+        <RecordsManager />
       </PageContainer>
     </>
   );
