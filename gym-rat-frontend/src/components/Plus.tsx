@@ -1,4 +1,4 @@
-import { IconButton, Box } from '@mui/material';
+import { IconButton } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 // Define a type for the props
@@ -10,7 +10,7 @@ const Plus = ({ onAdd }: PlusProps) => {
     return (
         <IconButton
         color="success"
-        onClick={onAdd }>
+        onClick={onAdd}>
             <AddCircleIcon />
         </IconButton>
     );
