@@ -25,10 +25,11 @@ const RecordsManager = () => {
 
     return (
         <Box sx={{
+            marginTop: 3,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: 3
+            gap: 2
         }}>
             {records}
             <Box sx={{ display: 'flex', gap: 1 }}>
