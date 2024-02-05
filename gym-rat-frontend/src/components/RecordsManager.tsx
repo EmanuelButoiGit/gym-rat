@@ -19,9 +19,34 @@ const RecordsManager = () => {
         });
     };
 
-    const sumbmitHandler = () => {
-        console.log("send API request")
-    }
+    const submitHandler = () => {
+        const data = 
+        [{
+            exercise: "Bench press",
+            weight: 100,
+            reps: 12
+        },
+        {
+            exercise: "Incline bench press",
+            weight: 70,
+            reps: 10
+        }];
+
+        fetch('http://localhost:8080/api/workout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    };
 
     return (
         <Box sx={{
@@ -35,7 +60,7 @@ const RecordsManager = () => {
             <Box sx={{ display: 'flex', gap: 1 }}>
                     <Plus onAdd={addRecordHandler} />
                     <Minus onRemove={removeRecordHandler} />
-                    <Submit onSubmit={sumbmitHandler} />
+                    <Submit onSubmit={submitHandler} />
             </Box>
         </Box>
     );
