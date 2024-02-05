@@ -1,12 +1,15 @@
-import Button from '@mui/material/Button';
+import Welcome from './components/Welcome';
+import PageContainer from './components/PageContainer';
+import RecordsManager from './components/RecordsManager';
 
 function App() {
   return (
-    <div>
-      <Button variant="contained" color="primary">
-      🏋🏻+🐁
-      </Button>
-    </div>
+    <>
+      <PageContainer>
+        <Welcome />
+        <RecordsManager />
+      </PageContainer>
+    </>
   );
 }
 
