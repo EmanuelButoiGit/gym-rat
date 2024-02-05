@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { Box } from '@mui/material';
 import Record from './Record';
 import Plus from './Plus';
 
 const RecordsManager = () => {
-    const [records, setRecords] = useState<any[]>([]);
+    const [records, setRecords] = useState<ReactElement<typeof Record>[]>([]);
 
     const addRecord = () => {
         setRecords(prevRecords => [...prevRecords, <Record key={prevRecords.length} />]);
