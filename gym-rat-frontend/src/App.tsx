@@ -12,9 +12,9 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/history" element={<MotivationPage />} />
+            <Route path="/history" />
             <Route path="/achivements" />
-            <Route path="/motivation" />
+            <Route path="/motivation" element={<MotivationPage />} />
           </Routes>
         </PageContainer>
       </BrowserRouter>
