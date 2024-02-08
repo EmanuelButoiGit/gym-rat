@@ -1,0 +1,25 @@
+const motivationalQuotes = [
+    "The only bad workout is the one that didn't happen.",
+    "Push yourself because no one else is going to do it for you.",
+    "Your only limit is you.",
+    "The body achieves what the mind believes.",
+    "Don't limit your challenges, challenge your limits.",
+    "It's not about having time, it's about making time.",
+    "The hardest lift of all is lifting your butt off the couch.",
+    "A champion is someone who gets up when they can't. – Jack Dempsey",
+    "You must expect great things of yourself before you can do them. – Michael Jordan",
+    "The worst thing I can be is the same as everybody else. I hate that. – Arnold Schwarzenegger",
+    "Vision creates faith and faith creates willpower. With faith, there is no anxiety and no doubt – just absolute confidence in yourself. – Arnold Schwarzenegger",
+    "The mind is the limit. As long as the mind can envision the fact that you can do something, you can do it, as long as you really believe 100 percent. – Arnold Schwarzenegger",
+    "To be a champion, you must act like a champion. – Lou Ferrigno",
+    "The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion. – Arnold Schwarzenegger",
+    "Everybody wants to be a bodybuilder, but nobody wants to lift no heavy-ass weights. – Ronnie Coleman",
+    "Light weight, baby! – Ronnie Coleman",
+    "It's not about being the best. It's about being better than you were yesterday. – Jay Cutler",
+    "The pain of today is the victory of tomorrow. – Phil Heath",
+    "Success is walking out of the gym and feeling like you were hit by a train. – Dorian Yates",
+    "I don't eat for taste, I eat for function. – Jay Cutler",
+    "The road to nowhere is paved with excuses. – Mark Bell",
+];
+
+export default motivationalQuotes;
