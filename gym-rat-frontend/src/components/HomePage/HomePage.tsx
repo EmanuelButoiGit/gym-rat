@@ -1,7 +1,7 @@
 import RecordsManager from "./RecordsManager";
 import Welcome from "./Welcome";
 
-const Homepage = () => {
+const HomePage = () => {
     return(
         <>
             <Welcome />
@@ -10,4 +10,4 @@ const Homepage = () => {
     );
 }
 
-export default Homepage;
+export default HomePage;

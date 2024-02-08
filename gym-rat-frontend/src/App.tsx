@@ -1,7 +1,8 @@
 import PageContainer from './components/PageContainer';
 import Navigation from './components/Navigation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Homepage from './homepage/Homepage';
+import HomePage from './components/HomePage/HomePage';
+import MotivationPage from './components/MotivationPage/MotivationPage';
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
         <PageContainer>
           <Navigation />
           <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/history" />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/history" element={<MotivationPage />} />
             <Route path="/achivements" />
             <Route path="/motivation" />
           </Routes>
