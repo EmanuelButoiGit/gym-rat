@@ -14,7 +14,6 @@ const Footer = () => {
       })
       .catch(console.error);
     } else {
-      // Fallback for browsers that do not support the Web Share API
       alert('Web share is not supported in this browser.');
     }
   };
