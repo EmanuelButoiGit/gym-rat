@@ -1,8 +1,9 @@
 import { AppBar, Toolbar, Typography, Button, Box, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
-import ShareIcon from '@mui/icons-material/Share'; // Import ShareIcon
+import ShareIcon from '@mui/icons-material/Share';
 
 const Footer = () => {
+
   // Share function using the Web Share API
   const handleShare = () => {
     if (navigator.share) {
@@ -11,6 +12,7 @@ const Footer = () => {
         url: window.location.href,
       }).then(() => {
         alert('Thanks for sharing!');
+        // TO DO: here send a flag or something to the Achivement page so the grayscale will be removed
       })
       .catch(console.error);
     } else {
