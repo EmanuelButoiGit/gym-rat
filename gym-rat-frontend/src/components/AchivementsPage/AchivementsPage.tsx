@@ -26,8 +26,8 @@ const AchievementsPage = () => {
                 height="140"
                 image={gunterImage}
                 alt="Smile Achievement"
-              />
-              {/* style={ filter: 'grayscale(100%)' } // Grayscale for locked achievement */} 
+                style={{ filter: 'grayscale(100%)' }}
+              /> 
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Smile Achievement
@@ -46,6 +46,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={goggingsImage}
                 alt="Cardio Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -65,6 +66,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={twinsImage}
                 alt="Smile Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -88,6 +90,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={platzImage}
                 alt="Smile Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -107,6 +110,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={zyzzImage}
                 alt="Smile Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -126,6 +130,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={mentzerImage}
                 alt="Smile Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
