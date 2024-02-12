@@ -5,8 +5,22 @@ import twinsImage from '../../images/twins.jpg';
 import zyzzImage from '../../images/zyzz.jpg';
 import platzImage from '../../images/platz.jpg';
 import mentzerImage from '../../images/mentzer.jpg';
+import { useState } from 'react';
 
 const AchievementsPage = () => {
+
+    // State to manage the grayscale of the twinsImage
+    const [isTwinsImageGrayscale, setIsTwinsImageGrayscale] = useState(true);
+
+    // Handler for the share button click
+    const handleShare = () => {
+      // Remove the grayscale from the twinsImage
+      setIsTwinsImageGrayscale(false);
+  
+      // Your existing share logic here
+      // navigator.share(...) or any other implementation
+    };
+
   return (
     <>
       <Container component="main">
