@@ -1,4 +1,3 @@
-import NotificationManager from "../AchivementsPage/NotificationManager";
 import RecordsManager from "./RecordsManager";
 import Welcome from "./Welcome";
 
@@ -7,7 +6,6 @@ const HomePage = () => {
         <>
             <Welcome />
             <RecordsManager />
-            <NotificationManager />
         </>
     );
 }
