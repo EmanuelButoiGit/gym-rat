@@ -1,5 +1,6 @@
-package com.gym.rat;
+package com.gym.rat.controllers;
 
+import com.gym.rat.dtos.RecordDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

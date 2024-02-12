@@ -5,8 +5,12 @@ import twinsImage from '../../images/twins.jpg';
 import zyzzImage from '../../images/zyzz.jpg';
 import platzImage from '../../images/platz.jpg';
 import mentzerImage from '../../images/mentzer.jpg';
+import { useGrayscale } from './GrayscaleContext';
 
 const AchievementsPage = () => {
+
+  const { achievements } = useGrayscale();
+
   return (
     <>
       <Container component="main">
@@ -26,8 +30,8 @@ const AchievementsPage = () => {
                 height="140"
                 image={gunterImage}
                 alt="Smile Achievement"
-              />
-              {/* style={ filter: 'grayscale(100%)' } // Grayscale for locked achievement */} 
+                style={{ filter: achievements['smileAchievement'] ? 'none' : 'grayscale(100%)' }}
+              /> 
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Smile Achievement
@@ -46,6 +50,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={goggingsImage}
                 alt="Cardio Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -64,7 +69,8 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={twinsImage}
-                alt="Smile Achievement"
+                alt="Bro Achievement"
+                style={{ filter: achievements['broAchievement'] ? 'none' : 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -87,7 +93,8 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={platzImage}
-                alt="Smile Achievement"
+                alt="Leg Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -106,7 +113,8 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={zyzzImage}
-                alt="Smile Achievement"
+                alt="Brah Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -125,7 +133,8 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={mentzerImage}
-                alt="Smile Achievement"
+                alt="Rest Achievement"
+                style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
