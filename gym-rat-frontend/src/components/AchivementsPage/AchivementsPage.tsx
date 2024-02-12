@@ -5,21 +5,8 @@ import twinsImage from '../../images/twins.jpg';
 import zyzzImage from '../../images/zyzz.jpg';
 import platzImage from '../../images/platz.jpg';
 import mentzerImage from '../../images/mentzer.jpg';
-import { useState } from 'react';
 
 const AchievementsPage = () => {
-
-    // State to manage the grayscale of the twinsImage
-    const [isTwinsImageGrayscale, setIsTwinsImageGrayscale] = useState(true);
-
-    // Handler for the share button click
-    const handleShare = () => {
-      // Remove the grayscale from the twinsImage
-      setIsTwinsImageGrayscale(false);
-  
-      // Your existing share logic here
-      // navigator.share(...) or any other implementation
-    };
 
   return (
     <>
@@ -79,7 +66,7 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={twinsImage}
-                alt="Smile Achievement"
+                alt="Bro Achievement"
                 style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
@@ -103,7 +90,7 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={platzImage}
-                alt="Smile Achievement"
+                alt="Leg Achievement"
                 style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
@@ -123,7 +110,7 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={zyzzImage}
-                alt="Smile Achievement"
+                alt="Brah Achievement"
                 style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
@@ -143,7 +130,7 @@ const AchievementsPage = () => {
                 component="img"
                 height="140"
                 image={mentzerImage}
-                alt="Smile Achievement"
+                alt="Rest Achievement"
                 style={{ filter: 'grayscale(100%)' }}
               />
               <CardContent>
