@@ -1,4 +1,4 @@
-package com.gym.rat;
+package com.gym.rat.controllers;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpServerErrorException;

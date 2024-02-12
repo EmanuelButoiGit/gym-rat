@@ -1,4 +1,4 @@
-package com.gym.rat;
+package com.gym.rat.dtos;
 
 import lombok.Data;
 

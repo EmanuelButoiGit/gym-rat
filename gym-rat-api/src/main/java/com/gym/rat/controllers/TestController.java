@@ -1,4 +1,4 @@
-package com.gym.rat;
+package com.gym.rat.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
