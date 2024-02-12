@@ -5,21 +5,24 @@ import HomePage from './components/HomePage/HomePage';
 import MotivationPage from './components/MotivationPage/MotivationPage';
 import AchivementsPage from './components/AchivementsPage/AchivementsPage';
 import { GrayscaleProvider } from './components/AchivementsPage/GrayscaleContext';
+import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <GrayscaleProvider> 
-          <PageContainer>
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/history" />
-              <Route path="/achivements" element={<AchivementsPage />} />
-              <Route path="/motivation" element={<MotivationPage />} />
-            </Routes>
-          </PageContainer>
+        <GrayscaleProvider>
+          <SnackbarProvider> 
+            <PageContainer>
+              <Navigation />
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/history" />
+                <Route path="/achivements" element={<AchivementsPage />} />
+                <Route path="/motivation" element={<MotivationPage />} />
+              </Routes>
+            </PageContainer>
+          </SnackbarProvider>
         </GrayscaleProvider> 
       </BrowserRouter>
     </>

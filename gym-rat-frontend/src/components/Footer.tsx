@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import ShareIcon from '@mui/icons-material/Share';
 import { useGrayscale } from './AchivementsPage/GrayscaleContext';
 import { useState } from 'react';
+import { useSnackbar } from 'notistack';
 
 const Footer = () => {
 
   const { unlockAchievement } = useGrayscale();
   const [emoticon, setEmoticon] = useState('😔');
+  const { enqueueSnackbar } = useSnackbar();
 
   // Share function using the Web Share API
   const handleShare = () => {
@@ -16,7 +18,14 @@ const Footer = () => {
         title: document.title,
         url: window.location.href,
       }).then(() => {
-        alert('Thanks for sharing!');
+        enqueueSnackbar('You unlocked an achivement!', {
+          variant: 'info',
+          anchorOrigin: {
+            vertical: 'bottom',
+            horizontal: 'right',
+          },
+          autoHideDuration: 3000,
+        });
         unlockAchievement('broAchievement');
       })
       .catch(console.error);
@@ -26,9 +35,16 @@ const Footer = () => {
   };
 
   const handleSmile = () => {
-      alert('Thanks for smiling!');
-      setEmoticon('😁');
-      unlockAchievement('smileAchievement');
+    enqueueSnackbar('You unlocked an achivement!', {
+      variant: 'info',
+      anchorOrigin: {
+        vertical: 'bottom',
+        horizontal: 'right',
+      },
+      autoHideDuration: 3000,
+    });
+    setEmoticon('😁');
+    unlockAchievement('smileAchievement');
   };
 
   return (
