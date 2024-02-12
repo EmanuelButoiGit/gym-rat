@@ -5,8 +5,11 @@ import twinsImage from '../../images/twins.jpg';
 import zyzzImage from '../../images/zyzz.jpg';
 import platzImage from '../../images/platz.jpg';
 import mentzerImage from '../../images/mentzer.jpg';
+import { useGrayscale } from './GrayscaleContext';
 
 const AchievementsPage = () => {
+
+  const { achievements } = useGrayscale();
 
   return (
     <>
@@ -27,7 +30,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={gunterImage}
                 alt="Smile Achievement"
-                style={{ filter: 'grayscale(100%)' }}
+                style={{ filter: achievements['smileAchievement'] ? 'none' : 'grayscale(100%)' }}
               /> 
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -67,7 +70,7 @@ const AchievementsPage = () => {
                 height="140"
                 image={twinsImage}
                 alt="Bro Achievement"
-                style={{ filter: 'grayscale(100%)' }}
+                style={{ filter: achievements['broAchievement'] ? 'none' : 'grayscale(100%)' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
