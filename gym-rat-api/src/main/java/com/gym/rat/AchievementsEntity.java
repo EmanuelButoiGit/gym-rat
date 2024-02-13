@@ -1,9 +1,11 @@
-package com.gym.rat.dtos;
+package com.gym.rat;
 
+import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
-public class AchievementsDto {
+@Entity
+public class AchievementsEntity {
     private Integer id;
     private Boolean smile;
     private Boolean cardio;
