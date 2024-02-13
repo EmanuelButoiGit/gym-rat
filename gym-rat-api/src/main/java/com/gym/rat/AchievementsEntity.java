@@ -1,11 +1,18 @@
 package com.gym.rat;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@Table(name = "achievements")
+@NoArgsConstructor
+@AllArgsConstructor
 public class AchievementsEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Boolean smile;
     private Boolean cardio;
