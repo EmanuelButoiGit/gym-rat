@@ -4,14 +4,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import MotivationPage from './components/MotivationPage/MotivationPage';
 import AchivementsPage from './components/AchivementsPage/AchivementsPage';
-import { GrayscaleProvider } from './components/AchivementsPage/GrayscaleContext';
 import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <GrayscaleProvider>
           <SnackbarProvider> 
             <PageContainer>
               <Navigation />
@@ -23,7 +21,6 @@ function App() {
               </Routes>
             </PageContainer>
           </SnackbarProvider>
-        </GrayscaleProvider> 
       </BrowserRouter>
     </>
   );

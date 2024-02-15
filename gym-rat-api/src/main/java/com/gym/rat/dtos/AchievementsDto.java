@@ -4,10 +4,11 @@ import lombok.Data;
 
 @Data
 public class AchievementsDto {
-    boolean smile;
-    boolean cardio;
-    boolean bro;
-    boolean leg;
-    boolean brah;
-    boolean rest;
+    private Integer id;
+    private Boolean smile;
+    private Boolean cardio;
+    private Boolean bro;
+    private Boolean leg;
+    private Boolean brah;
+    private Boolean rest;
 }

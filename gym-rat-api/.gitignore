@@ -1,92 +1,37 @@
-# Maven - Ignore build output directory
-/target/
-
-# Gradle - Ignore build output directory
-/build/
-
-# Gradle Wrapper - Ignore binary jar file
-.gradle/
+HELP.md
+.gradle
+build/
 !gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# IDE - Eclipse specific
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
 .springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# IDE - IntelliJ IDEA specific
-.idea/
-*.iml
+### IntelliJ IDEA ###
+.idea
 *.iws
+*.iml
 *.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# IDE - Visual Studio Code specific
-.vscode/
-
-# IDE - NetBeans specific
+### NetBeans ###
 /nbproject/private/
-/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-# Package Files - Ignore package lock files and local package configuration
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# Logs - Ignore all log files and directories
-*.log
-*.sql
-*.log.*
-/log/
-/logs/
-
-# Temp files - Ignore temporary files
-*.tmp
-*.bak
-*.swp
-*.swo
-
-# OS - Mac specific
-.DS_Store
-
-# OS - Windows specific
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# OS - Linux specific
-.directory
-
-# Application-specific - Ignore configuration files that may contain sensitive information
-*.conf
-*.cfg
-*.config
-/application.properties
-/application.yml
-/application-dev.properties
-/application-prod.properties
-/application-test.properties
-
-# Security - Ignore security sensitive files
-*.pem
-*.key
-*.keystore
-*.jks
-*.truststore
-
-# Others - Ignore other files such as compressed files, backup files, or other generated files
-*.zip
-*.rar
-*.gz
-*.bz2
-*.tgz
-*.backup
-*.tmp
-*.temp
+### VS Code ###
+.vscode/

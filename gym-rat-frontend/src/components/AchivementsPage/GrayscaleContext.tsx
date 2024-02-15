@@ -1,6 +1,6 @@
 // GrayscaleContext.tsx
 
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 // Context value type with a map of achievements
 type GrayscaleContextType = {
