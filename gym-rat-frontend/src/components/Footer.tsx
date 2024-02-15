@@ -1,13 +1,10 @@
 import { AppBar, Toolbar, Typography, Button, Box, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ShareIcon from '@mui/icons-material/Share';
-import { useGrayscale } from './AchivementsPage/GrayscaleContext';
 import { useState } from 'react';
 import { useSnackbar } from 'notistack';
 
 const Footer = () => {
-
-  const { unlockAchievement } = useGrayscale();
   const [emoticon, setEmoticon] = useState('😔');
   const { enqueueSnackbar } = useSnackbar();
 
@@ -18,15 +15,25 @@ const Footer = () => {
         title: document.title,
         url: window.location.href,
       }).then(() => {
-        enqueueSnackbar('You unlocked an achivement!', {
-          variant: 'info',
-          anchorOrigin: {
-            vertical: 'bottom',
-            horizontal: 'right',
-          },
-          autoHideDuration: 3000,
+        fetch('http://localhost:8080/api/achievements/bro', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(() => {
+          enqueueSnackbar('You unlocked an achivement!', {
+            variant: 'info',
+            anchorOrigin: {
+              vertical: 'bottom',
+              horizontal: 'right',
+            },
+            autoHideDuration: 3000,
+          });
+        })
+        .catch((error) => {
+            console.error('Error:', error);
         });
-        unlockAchievement('broAchievement');
       })
       .catch(console.error);
     } else {
@@ -43,8 +50,18 @@ const Footer = () => {
       },
       autoHideDuration: 3000,
     });
-    setEmoticon('😁');
-    unlockAchievement('smileAchievement');
+    fetch('http://localhost:8080/api/achievements/smile', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(() => {
+          setEmoticon('😁');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
   };
 
   return (
