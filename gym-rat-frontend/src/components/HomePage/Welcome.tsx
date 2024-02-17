@@ -1,4 +1,5 @@
 import {Box, Container, Typography} from '@mui/material';
+
 const Welcome = () => {
     return (
         <Container component="main" style={{ flex: 1 }}>
