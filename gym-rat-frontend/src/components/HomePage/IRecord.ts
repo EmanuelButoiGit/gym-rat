@@ -3,4 +3,5 @@ export default interface IRecord {
   exercise: string;
   weight: number;
   reps: number;
+  date: string;
 }
