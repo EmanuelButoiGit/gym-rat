@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box } from '@mui/material';
 import Record from './Record';
 import Plus from './Plus';
@@ -14,7 +14,8 @@ const RecordsManager = () => {
             id: records.length > 0 ? records[records.length - 1].id + 1 : 0,
             exercise: '',
             weight: 0,
-            reps: 0
+            reps: 0,
+            date: ""
         };
         setRecords(prevRecords => [...prevRecords, newRecord]);
     };

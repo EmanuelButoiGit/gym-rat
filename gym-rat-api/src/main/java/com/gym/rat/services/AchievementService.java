@@ -1,6 +1,6 @@
 package com.gym.rat.services;
 
-import com.gym.rat.AchievementsConverter;
+import com.gym.rat.converters.AchievementConverter;
 import com.gym.rat.repositories.AchievementsRepository;
 import com.gym.rat.dtos.AchievementsDto;
 import com.gym.rat.entities.AchievementsEntity;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class AchievementService {
 
     private final AchievementsRepository repo;
-    private final AchievementsConverter converter;
+    private final AchievementConverter converter;
 
     public AchievementsDto getAchievements(){
         // get first entry from table because there is only 1 user

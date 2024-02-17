@@ -1,11 +1,11 @@
-package com.gym.rat;
+package com.gym.rat.converters;
 
 import com.gym.rat.dtos.AchievementsDto;
 import com.gym.rat.entities.AchievementsEntity;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AchievementsConverter {
+public class AchievementConverter {
 
     public AchievementsDto toDto(AchievementsEntity entity){
         AchievementsDto dto = new AchievementsDto();

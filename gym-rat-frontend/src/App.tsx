@@ -5,6 +5,7 @@ import HomePage from './components/HomePage/HomePage';
 import MotivationPage from './components/MotivationPage/MotivationPage';
 import AchivementsPage from './components/AchivementsPage/AchivementsPage';
 import { SnackbarProvider } from 'notistack';
+import HistoryPage from './components/HistoryPage';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
               <Navigation />
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/history" />
+                <Route path="/history" element={<HistoryPage />} />
                 <Route path="/achivements" element={<AchivementsPage />} />
                 <Route path="/motivation" element={<MotivationPage />} />
               </Routes>
