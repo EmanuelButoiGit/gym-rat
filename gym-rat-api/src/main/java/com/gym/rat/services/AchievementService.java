@@ -1,6 +1,6 @@
 package com.gym.rat.services;
 
-import com.gym.rat.AchievementsConverter;
+import com.gym.rat.converters.AchievementsConverter;
 import com.gym.rat.repositories.AchievementsRepository;
 import com.gym.rat.dtos.AchievementsDto;
 import com.gym.rat.entities.AchievementsEntity;

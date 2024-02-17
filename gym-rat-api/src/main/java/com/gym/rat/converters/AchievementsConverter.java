@@ -1,4 +1,4 @@
-package com.gym.rat;
+package com.gym.rat.converters;
 
 import com.gym.rat.dtos.AchievementsDto;
 import com.gym.rat.entities.AchievementsEntity;

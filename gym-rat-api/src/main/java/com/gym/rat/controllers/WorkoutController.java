@@ -14,7 +14,11 @@ import java.util.List;
 public class WorkoutController {
     private final WorkoutService workoutService;
     @PostMapping
-    public void createExerciseRecord(@RequestBody List<RecordDto> workout) {
+    public void saveWorkout(@RequestBody List<RecordDto> workout) {
         workoutService.saveWorkout(workout);
+    }
+    @GetMapping
+    public List<RecordDto> getAllRecords() {
+        return workoutService.getAllRecords();
     }
 }
