@@ -1,6 +1,6 @@
 package com.gym.rat.controllers;
 
-import com.gym.rat.AchievementService;
+import com.gym.rat.services.AchievementService;
 import com.gym.rat.dtos.AchievementsDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

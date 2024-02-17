@@ -1,6 +1,9 @@
-package com.gym.rat;
+package com.gym.rat.services;
 
+import com.gym.rat.AchievementsConverter;
+import com.gym.rat.repositories.AchievementsRepository;
 import com.gym.rat.dtos.AchievementsDto;
+import com.gym.rat.entities.AchievementsEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

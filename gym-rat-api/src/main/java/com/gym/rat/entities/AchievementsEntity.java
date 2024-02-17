@@ -1,4 +1,4 @@
-package com.gym.rat;
+package com.gym.rat.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
