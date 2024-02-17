@@ -1,24 +1,20 @@
 package com.gym.rat.controllers;
 
+import com.gym.rat.services.WorkoutService;
 import com.gym.rat.dtos.RecordDto;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("api/workout")
 public class WorkoutController {
-    @CrossOrigin
+    private final WorkoutService workoutService;
     @PostMapping
-    public String createExerciseRecord(@RequestBody List<RecordDto> workout) {
-        StringBuilder textToPrint = new StringBuilder("");
-        workout.forEach(recordDto ->
-                textToPrint.append("exercise: ").append(recordDto.getExercise())
-                        .append(" weight: ").append(recordDto.getWeight())
-                        .append(" reps").append(recordDto.getReps())
-                        .append("\n")
-        );
-
-        return textToPrint.toString();
+    public void createExerciseRecord(@RequestBody List<RecordDto> workout) {
+        workoutService.saveWorkout(workout);
     }
 }

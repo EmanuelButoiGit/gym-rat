@@ -1,37 +1,34 @@
-import { ReactElement, useState } from 'react';
+import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import Record from './Record';
 import Plus from './Plus';
 import Minus from './Minus';
 import Submit from './Submit';
+import IRecord from './IRecord';
 
 const RecordsManager = () => {
-    const [records, setRecords] = useState<ReactElement<typeof Record>[]>([]);
+    const [records, setRecords] = useState<IRecord[]>([]);
 
     const addRecordHandler = () => {
-        setRecords(prevRecords => [...prevRecords, <Record key={prevRecords.length} />]);
+        const newRecord: IRecord = {
+            id: records.length > 0 ? records[records.length - 1].id + 1 : 0,
+            exercise: '',
+            weight: 0,
+            reps: 0
+        };
+        setRecords(prevRecords => [...prevRecords, newRecord]);
     };
 
     const removeRecordHandler = () => {
-        setRecords(prevRecords => {
-            const newRecords = prevRecords.slice(0, -1);
-            return newRecords;
-        });
+        setRecords(prevRecords => prevRecords.slice(0, -1));
+    };
+
+    const handleChange = (updatedRecord: IRecord) => {
+        setRecords(prevRecords => prevRecords.map(record => record.id === updatedRecord.id ? updatedRecord : record));
     };
 
     const submitHandler = () => {
-        const data = 
-        [{
-            exercise: "Bench press",
-            weight: 100,
-            reps: 12
-        },
-        {
-            exercise: "Incline bench press",
-            weight: 70,
-            reps: 10
-        }];
-
+        const data = records;
         fetch('http://localhost:8080/api/workout', {
             method: 'POST',
             headers: {
@@ -56,11 +53,13 @@ const RecordsManager = () => {
             alignItems: 'center',
             gap: 2
         }}>
-            {records}
+            {records.map((record) => (
+                <Record key={record.id} record={record} onChange={handleChange} />
+            ))}
             <Box sx={{ display: 'flex', gap: 1 }}>
-                    <Plus onAdd={addRecordHandler} />
-                    <Minus onRemove={removeRecordHandler} />
-                    <Submit onSubmit={submitHandler} />
+                <Plus onAdd={addRecordHandler} />
+                <Minus onRemove={removeRecordHandler} />
+                <Submit onSubmit={submitHandler} />
             </Box>
         </Box>
     );
