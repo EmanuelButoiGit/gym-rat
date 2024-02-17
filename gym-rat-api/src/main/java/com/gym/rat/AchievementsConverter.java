@@ -1,6 +1,7 @@
 package com.gym.rat;
 
 import com.gym.rat.dtos.AchievementsDto;
+import com.gym.rat.entities.AchievementsEntity;
 import org.springframework.stereotype.Component;
 
 @Component
