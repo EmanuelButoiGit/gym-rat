@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid, Card, CardMedia, CardContent, LinearProgress } from '@mui/material';
+import { Container, Typography, Grid, Card, CardMedia, CardContent, LinearProgress } from '@mui/material';
 import gunterImage from '../../images/gunter.jpg';
 import goggingsImage from '../../images/goggings.jpg';
 import twinsImage from '../../images/twins.jpg';
@@ -7,6 +7,7 @@ import platzImage from '../../images/platz.jpg';
 import mentzerImage from '../../images/mentzer.jpg';
 import { useEffect, useState } from 'react';
 import IAchievements from './IAchievemts';
+import Header from '../Header';
 
 const AchievementsPage = () => {
 
@@ -32,14 +33,9 @@ const AchievementsPage = () => {
   return (
     <>
       <Container component="main">
-        <Box textAlign="center" marginTop={8}>
-          <Typography variant="h3" gutterBottom>
-            Trophy Room 🏆
-          </Typography>
-          <Typography variant="h5" gutterBottom>
-            Achieve with this app as much as possible - collect them all 🎖️!
-          </Typography>
-        </Box>
+
+        <Header title = "Trophy Room 🏆" subtitle = "Achieve with this app as much as possible - collect them all 🎖️!" />
+        
         {achievements ? (
         <>
           <Grid container spacing={4} justifyContent="center" style={{ marginTop: '20px' }}>

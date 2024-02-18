@@ -1,7 +1,8 @@
-import {Box, Container, Typography} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import Randomize from './Randomize';
 import { useState } from 'react';
 import motivationalQuotes from './motivationalQuotes';
+import Header from '../Header';
 
 const MotivationPage = () => {
     const [message, setMessage] = useState('Click on the dice to get your motivation boost ⚡!');
@@ -12,16 +13,7 @@ const MotivationPage = () => {
     }
     return (
         <>
-            <Container component="main" style={{ flex: 1 }}>
-                <Box textAlign="center" marginTop={8}>
-                    <Typography variant="h3" gutterBottom>
-                        Motivation 🎯
-                    </Typography>
-                    <Typography variant="h5" gutterBottom>
-                        Be always inspired!
-                    </Typography>
-                </Box>
-            </Container>
+            <Header title = "Motivation 🎯" subtitle="Be always inspired!" />
             <Box sx={{
                 marginTop: 3,
                 display: 'flex',

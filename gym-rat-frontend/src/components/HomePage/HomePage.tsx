@@ -1,10 +1,10 @@
+import Header from "../Header";
 import RecordsManager from "./RecordsManager";
-import Welcome from "./Welcome";
 
 const HomePage = () => {
     return(
         <>
-            <Welcome />
+            <Header title = "Welcome to Gym Rat 🏋🏻+🐁" subtitle = "Track your lifts and achieve your goals!" />
             <RecordsManager />
         </>
     );

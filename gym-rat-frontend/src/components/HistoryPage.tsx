@@ -1,6 +1,7 @@
-import {Box, Container, Typography, CardContent, Grid, Card, Chip} from '@mui/material';
+import {Container, Typography, CardContent, Grid, Card, Chip} from '@mui/material';
 import IRecord from './HomePage/IRecord';
 import { useEffect, useState } from 'react';
+import Header from './Header';
 
 const HistoryPage = () => {
     const [records, setRecords] = useState<IRecord[]>([]);
@@ -43,15 +44,9 @@ const HistoryPage = () => {
 
     return (
         <Container component="main" maxWidth="md" sx={{ marginTop: 8 }}>
-            <Box textAlign="center" mb={4}>
-                <Typography variant="h3" gutterBottom>
-                    Workout History 🏛️
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                    See your last lifts and how you progressed!
-                </Typography>
-            </Box>
 
+            <Header title = "Workout History 🏛️" subtitle = "See your last lifts and how you progressed!" />
+            
             <Grid container spacing={3}>
                 {records.map(record => (
                     <Grid item xs={12} sm={6} md={4} key={record.id}>
