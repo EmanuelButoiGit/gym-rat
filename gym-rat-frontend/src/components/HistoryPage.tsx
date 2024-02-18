@@ -16,7 +16,6 @@ const HistoryPage = () => {
         { id: 6, exercise: 'Squats 🦵', weight: 50, reps: 13, date: '2024-01-03' },
         { id: 7, exercise: 'Squats 🦵', weight: 60, reps: 11, date: '2024-01-03' },
         { id: 8, exercise: 'Squats 🦵', weight: 60, reps: 10, date: '2024-01-03' },
-
     ];
 
     useEffect(() => {
