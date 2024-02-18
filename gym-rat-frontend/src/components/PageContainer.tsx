@@ -5,7 +5,7 @@ const PageContainer = ( props: any ) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Container component="main" 
-        sx={{ flex: 1, 
+        sx={{ flexGrow: 1, 
             backgroundColor: "azure", 
             paddingY: 2, 
             minHeight: "100vh", 
