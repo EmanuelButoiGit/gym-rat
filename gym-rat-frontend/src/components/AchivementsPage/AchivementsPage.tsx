@@ -164,12 +164,131 @@ const AchievementsPage = () => {
           </Grid>
         </>
         ) : (
-          <Box textAlign="center" marginTop={8}>
-            <Typography variant="h5" style={{ color: 'skyblue'}} gutterBottom>
-              Loading achievements... 
-            </Typography>
-            <LinearProgress style={{ marginTop: '40px' }} />
-          </Box>
+          // <Box textAlign="center" marginTop={8}>
+          //   <Typography variant="h5" style={{ color: 'skyblue'}} gutterBottom>
+          //     Loading achievements... 
+          //   </Typography>
+          //   <LinearProgress style={{ marginTop: '40px' }} />
+          // </Box>
+
+          // Add preview for the app (when backend is down)
+          <>
+          <Grid container spacing={4} justifyContent="center" style={{ marginTop: '20px' }}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={gunterImage}
+                  alt="Smile Achievement"
+                /> 
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Smile Achievement
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                      "SMILE is Not an Official Pose Günter! ☝️🤓"
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={goggingsImage}
+                  alt="Cardio Achievement"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                      Cardio King
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                      "Who's gonna carry the boats and the logs?"
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={twinsImage}
+                  alt="Bro Achievement"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Bro Achievement
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    "Share the Gym Rat app to your bro!" 🏋🏻 📢 🏋️‍♀️
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+
+          
+          <Grid container spacing={4} justifyContent="center" style={{ marginTop: '20px' }}>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={platzImage}
+                  alt="Leg Achievement"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                      Leg Achievement
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                      "Life is like doing a super heavy squat 😳!"
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={zyzzImage}
+                  alt="Brah Achievement"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                      Brah Achievement
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                      "We're all gonna make it brah 🔱!" (Do 30 workouts) 
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={mentzerImage}
+                  alt="Rest Achievement"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                      Rest Achievement
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                      You have rested enough so the muscle can grow 🌱!
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </>
+
         )}
       </Container>
     </>
