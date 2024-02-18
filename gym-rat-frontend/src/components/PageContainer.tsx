@@ -9,7 +9,7 @@ const PageContainer = ( props: any ) => {
             backgroundColor: "azure", 
             paddingY: 2, 
             minHeight: "100vh", 
-            width: "95vh", 
+            width: "95%", 
             overflow: "auto" }}>
         {props.children}
       </Container>
