@@ -8,8 +8,8 @@ const PageContainer = ( props: any ) => {
         sx={{ flex: 1, 
             backgroundColor: "azure", 
             paddingY: 2, 
-            minHeight: "100vh", 
-            width: "95%", 
+            minHeight: "100%", 
+            width: "95vh", 
             overflow: "auto" }}>
         {props.children}
       </Container>
