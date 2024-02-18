@@ -5,6 +5,20 @@ import { useEffect, useState } from 'react';
 const HistoryPage = () => {
     const [records, setRecords] = useState<IRecord[]>([]);
 
+    // Mock data to display when fetch fails or returns empty for the preview
+    const mockRecords: IRecord[] = [
+        { id: 0, exercise: 'Shadow boxing 🥊', weight: 5, reps: 100, date: '2024-01-01' },
+        { id: 1, exercise: 'Shadow boxing 🥊', weight: 5, reps: 100, date: '2024-01-01' },
+        { id: 2, exercise: 'Shadow boxing 🥊', weight: 5, reps: 100, date: '2024-01-01' },
+        { id: 3, exercise: 'Bicep curls 💪', weight: 8, reps: 14, date: '2024-01-02' },
+        { id: 4, exercise: 'Bicep curls 💪', weight: 10, reps: 12, date: '2024-01-02' },
+        { id: 5, exercise: 'Bicep curls 💪', weight: 12.5, reps: 10, date: '2024-01-02' },
+        { id: 6, exercise: 'Squats 🦵', weight: 50, reps: 13, date: '2024-01-03' },
+        { id: 7, exercise: 'Squats 🦵', weight: 60, reps: 11, date: '2024-01-03' },
+        { id: 8, exercise: 'Squats 🦵', weight: 60, reps: 10, date: '2024-01-03' },
+
+    ];
+
     useEffect(() => {
         const fetchRecords = async () => {
             try {
@@ -15,6 +29,7 @@ const HistoryPage = () => {
                 const data = await response.json();
                 setRecords(data);
             } catch (error) {
+                setRecords(mockRecords);
                 console.error('There was a problem with your fetch operation:', error);
             }
         };
