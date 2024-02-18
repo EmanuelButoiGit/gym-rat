@@ -171,7 +171,7 @@ const AchievementsPage = () => {
           //   <LinearProgress style={{ marginTop: '40px' }} />
           // </Box>
 
-          // Preview for the app (when backend is off)
+          // Add preview for the app (when backend is down)
           <>
           <Grid container spacing={4} justifyContent="center" style={{ marginTop: '20px' }}>
             <Grid item xs={12} sm={6} md={4}>
