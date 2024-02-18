@@ -18,29 +18,9 @@ public class AchievementController {
         achievementService.saveSmileAchievement();
     }
 
-    @PostMapping("/cardio")
-    public void saveCardioAchievement() {
-        achievementService.saveCardioAchievement();
-    }
-
     @PostMapping("/bro")
     public void saveBroAchievement() {
         achievementService.saveBroAchievement();
-    }
-
-    @PostMapping("/leg")
-    public void saveLegAchievement() {
-        achievementService.saveLegAchievement();
-    }
-
-    @PostMapping("/brah")
-    public void saveBrahAchievement() {
-        achievementService.saveBrahAchievement();
-    }
-
-    @PostMapping("/rest")
-    public void saveRestAchievement() {
-        achievementService.saveRestAchievement();
     }
 
     @GetMapping()

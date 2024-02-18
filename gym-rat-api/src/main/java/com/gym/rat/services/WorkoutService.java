@@ -16,9 +16,13 @@ public class WorkoutService {
     private final WorkoutRepository repo;
     private final RecordConverter converter;
 
+    private final AchievementService achievementService;
+
     public void saveWorkout(List<RecordDto> records) {
         LocalDateTime now = LocalDateTime.now();
         records.forEach(item -> item.setDate(now));
+        List<RecordDto> allRecords = getAllRecords();
+        achievementService.checkFlags(records, allRecords);
         List<RecordEntity> savedWorkout = records.stream().map(converter::toEntity).toList();
         repo.saveAll(savedWorkout);
     }
