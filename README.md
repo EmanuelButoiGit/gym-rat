@@ -1,15 +1,20 @@
 # GymRat 🏋🏻+🐁
 
+[![React Badge](https://img.shields.io/badge/Frontend-React-blue.svg?style=flat-square&logo=react)](https://reactjs.org/)
+[![Java Badge](https://img.shields.io/badge/Backend-Java-red.svg?style=flat-square&logo=java)](https://www.oracle.com/java/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
+[![Vercel Deployment](https://img.shields.io/badge/deployed%20on-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com/)
+
 Welcome to GymRat, your ultimate gym companion! GymRat is a full-stack application built using React and Material-UI for the frontend and Java, Spring Boot, Postgres for the backend, this app offers a sleek, user-friendly interface to track your lifting progress, monitor your workout history, celebrate your achievements, and even find daily motivation to push your limits.
 
-## Features 🚀
+## 🚀 Features 
 
 - **Track Your Lifts 🏋🏻**: Log every lift with ease and monitor your progress over time.
 - **Workout History 🏛️**: Dive into your past workouts to see how far you've come.
 - **Achievements 🎖️**: Unlock achievements based on your actions and milestones.
 - **Motivation Boost ⚡**: Need a push? Roll the dice on our Motivation page to receive an uplifting quote.
 
-## Preview 🐋
+## 🐋 Preview 
 
 GymRat is currently **hosted** on Vercel for preview. Check it out [HERE!](https://gym-rat-ruby.vercel.app/).
 
