@@ -28,7 +28,8 @@ GymRat is currently **hosted** on Vercel for preview. Check it out [HERE!](https
 ![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/aeac4728-27a0-474e-93f7-d557444ee7cd)
 <br><br>
 ## Motivation <br>
-![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/5c229cd1-5e44-414c-af3c-1efa2f3db6d5)
+![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/1c818847-afd5-4cd4-a58d-3b691e74cde8)
+
 <br><br>
 
 ## 🤝 Contribution Guidelines
