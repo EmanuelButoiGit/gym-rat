@@ -47,7 +47,7 @@ const HistoryPage = () => {
 
             <Header title = "Workout History 🏛️" subtitle = "See your last lifts and how you progressed!" />
             
-            <Grid container spacing={3}>
+            <Grid container spacing={3} sx={{ marginTop: '3vh' }}>
                 {records.map(record => (
                     <Grid item xs={12} sm={6} md={4} key={record.id}>
                         <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: 'mintcream' }}>

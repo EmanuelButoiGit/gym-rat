@@ -24,7 +24,8 @@ const Record = ({ record: initialRecord, onChange }: RecordProps) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: 3
+            gap: 3,
+            marginTop: '3vh' 
         }}>
             <TextField 
                 required 
