@@ -19,10 +19,10 @@ Welcome to GymRat, your ultimate gym companion! GymRat is a full-stack applicati
 GymRat is currently **hosted** on Vercel for preview. Check it out [HERE!](https://gym-rat-ruby.vercel.app/).
 
 ## Home Page <br>
-![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/0c97e5e2-f243-4ade-a2a8-7eb115f914bf)
+![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/23881451-37ad-4b08-98c3-cd306dac0633)
 <br><br>
 ## Workout History <br>
-![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/630b1e1f-6886-4899-822b-b1ee8987fe87)
+![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/9edda91c-42b4-4077-9b61-edd027cbd53e)
 <br><br>
 ## Achivements <br>
 ![image](https://github.com/EmanuelButoiGit/gym-rat/assets/72088440/aeac4728-27a0-474e-93f7-d557444ee7cd)
